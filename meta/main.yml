@@ -1,7 +1,7 @@
 galaxy_info:
   author: chusiang
   description: An Ansible role example for automate-with-ansible book.
-  company: \@commandp
+  company: commandp Inc.
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -31,7 +31,7 @@ galaxy_info:
   # the ones that apply to your role. If you don't see your
   # platform on this list, let us know and we'll get it added!
   #
-  #platforms:
+  platforms:
   #- name: OpenBSD
   #  versions:
   #  - all
