@@ -1,4 +1,4 @@
-# Ansible Role: Hello World
+Ansible Role: Hello World
 =========
 
 An Ansible role for automate-with-ansible book.
@@ -32,8 +32,31 @@ Including an example of how to use your role (for instance, with variables passe
       roles:
          - { role: chusiang.helloworld }
 
+Execute result:
+
+	$ ansible-playbook setup.yml
+	
+	PLAY [Play 'Hello World'] ******************************************************
+	
+	TASK [setup] *******************************************************************
+	ok: [localhost]
+	
+	TASK [echo 'hello world'] ******************************************************
+	changed: [localhost]
+	
+	TASK [print message] ***********************************************************
+	ok: [localhost] => {
+	    "msg": [
+	        "Hello world"
+	    ]
+	}
+	
+	PLAY RECAP *********************************************************************
+	localhost                  : ok=3    changed=1    unreachable=0    failed=0
+
+
 License
 -------
 
-Copyright (c) chusiang from 2016 under the MIT license.
+Copyright (c) chusiang from 2016-2017 under the MIT license.
 
