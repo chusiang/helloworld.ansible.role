@@ -1,6 +1,9 @@
 Ansible Role: Hello World
 =========
 
+![https://travis-ci.org/chusiang/helloworld.ansible.role.svg?branch=master](https://travis-ci.org/chusiang/helloworld.ansible.role#)
+
+
 An Ansible role for automate-with-ansible book.
 
 
