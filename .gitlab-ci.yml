@@ -1,5 +1,6 @@
 stages:
   - test
+  - run
 
 syntax_check:
   image: chusiang/ansible:alpine-3.6
@@ -9,3 +10,12 @@ syntax_check:
   tags:
     - docker
   allow_failure: false
+
+run_playbook:
+  image: chusiang/ansible:alpine-3.6
+  stage: run
+  script:
+    - ansible-playbook setup.yml
+  tags:
+    - docker
+
